@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>นับถอยหลัง</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Input -->
+      <div class="input-container" id="input-container">
+        <form class="input-form">
+          <div class="title-container">
+            <label for="title">เรื่อง:</label>
+            <input type="text" id="input-title" placeholder="ทำอะไรดีนะ" />
+          </div>
+          <div class="date-container">
+            <label for="date-picker">เลือกวันที่:</label>
+            <input type="date" id="date-picker" name="date-picker" />
+          </div>
+          <button type="submit" id="input-button" class="btn">
+            นับถอยหลัง
+          </button>
+        </form>
+      </div>
+
+      <!-- Countdown -->
+      <div class="countdown-container" id="countdown-container" hidden>
+        <div class="countdown-title-container">
+          <h3 id="countdown-title">เรื่อง :</h3>
+          <p class="title-info" id="title-info">ทดสอบ</p>
+        </div>
+        <div class="countdown-details">
+          <span>2</span>
+          <span>5</span>
+          <span>10</span>
+          <span>60</span>
+          <span>วัน</span>
+          <span>ชั่วโมง</span>
+          <span>นาที</span>
+          <span>วินาที</span>
+        </div>
+        <div class="button-container">
+          <button id="reset-btn" class="btn">รีเซ็ต</button>
+        </div>
+      </div>
+      <!-- Complete -->
+      <div class="complete-container" id="complete-container" hidden>
+        <h2 class="complete-title">COMPLETE</h2>
+        <div class="complete-info-container">
+          <div class="countdown-title-container">
+            <p id="complete-title">เรื่อง :</p>
+            <p class="complete-info" id="complete-info">ทดสอบ</p>
+          </div>
+          <div class="complete-date-container">
+            <p class="date-end-title">วันที่ตั้ง :</p>
+            <p class="date-end-number" id="date-end-number">2 6 2</p>
+          </div>
+        </div>
+        <div class="complete-btn-container">
+          <button id="complete-btn" class="btn">เริ่มต้นใหม่</button>
+        </div>
+      </div>
+    </div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+
+    <!-- <script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script> -->
+  </body>
+</html>

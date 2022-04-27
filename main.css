@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+}
+
+html {
+  /* ฟอนต์ที่ต้องการคือ 10 ดังนั้นต้องเอา 10/16(16คือค่าเริ่มต้นของบราวเซอร์) = 0.625 แปลงเป็นเปอร์เซ็นคือ 62.5% */
+  font-size: 62.5%;
+  color: #212529;
+}
+
+body {
+  background-color: #e9ecef;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 13rem auto;
+  height: 40rem;
+  width: 88rem;
+  box-shadow: 0 1.6rem 4.8rem rgba(0, 0, 0, 0.145);
+  border-radius: 2rem;
+  font-size: 2.4rem;
+  background-color: #f8f9fa;
+}
+/* Input Container */
+
+.input-container {
+  /* height: 55%; */
+  width: 85%;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.date-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.input-form {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+#input-title {
+  width: 75%;
+  height: 3.4rem;
+  padding: 1rem;
+  outline: none;
+  /* border: 0.2rem solid #343a40; */
+  border: none;
+  border-bottom: 0.3rem solid #495057;
+  font-size: 1.8rem;
+  background-color: inherit;
+}
+
+#date-picker {
+  width: 70%;
+  height: 3.4rem;
+  padding: 1rem;
+  outline: none;
+  /* border: 0.2rem solid #343a40; */
+  border: none;
+  border-bottom: 0.3rem solid #495057;
+  background-color: inherit;
+  font-size: 1.8rem;
+}
+
+#input-button {
+  margin-top: 2.4rem;
+  grid-column: 1 / span 2;
+  margin-top: 3.2rem;
+  width: 20%;
+}
+
+.btn {
+  font-size: 2.1rem;
+  width: 3.4rem;
+  height: 5.5rem;
+  background-color: #f8f9fa;
+  border-radius: 5rem;
+  border: 0.3rem solid #495057;
+  color: #343a40;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #495057;
+  color: #f8f9fa;
+}
+/* Countdown Container */
+
+.countdown-container {
+  width: 75%;
+  /* display:flex;
+  flex-direction: column;
+  align-items:center; */
+}
+
+.countdown-title-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+#countdown-title {
+  display: inline-block;
+}
+
+.title-info {
+  display: inline-block;
+  border-bottom: 0.2rem solid #495057;
+  padding: 0.1rem;
+  max-width: 100%;
+}
+
+.countdown-details {
+  margin-top: 4.8rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-items: center;
+  row-gap: 0.3rem;
+}
+
+.button-container {
+  margin-top: 2.4rem;
+  display: flex;
+  justify-content: center;
+}
+
+#reset-btn {
+  width: 15%;
+}
+
+/* Complete Container */
+
+.complete-container {
+  width: 75%;
+}
+
+.complete-title {
+  letter-spacing: 0.5rem;
+  text-align: center;
+}
+
+.complete-info-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+  color: #212529;
+}
+
+.countdown-title-container {
+  width: 60%;
+}
+
+.complete-info {
+  display: inline-block;
+  border-bottom: 0.2rem solid #495057;
+
+  max-width: 100%;
+}
+
+.complete-date-container {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.date-end-title {
+  display: inline-block;
+}
+
+.date-end-number {
+  display: inline-block;
+  border-bottom: 0.2rem solid #495057;
+  max-width: 100%;
+}
+
+.complete-btn-container {
+  margin-top: 2.4rem;
+  display: flex;
+  justify-content: center;
+}
+
+#complete-title {
+  display: inline-block;
+}
+
+#complete-btn {
+  width: 15%;
+}
+
+.swal2-popup {
+  font-size: 1.6rem !important;
+  font-family: Georgia, serif;
+}
