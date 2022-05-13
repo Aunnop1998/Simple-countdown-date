@@ -1,5 +1,5 @@
-https://aunnop1998.github.io/Simple-countdown-date/
+Watch >>  https://aunnop1998.github.io/Simple-countdown-date/
 
-# Simple-countdown-date
-แอพนับถอยหลังโดยกำหนดวันที่
+แอพนับถอยหลังโดยกำหนดวันที่ (ฝึก Javascript)
+
 
